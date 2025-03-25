@@ -59,7 +59,7 @@ const LandingPage = () => {
                 </table>
             </div>
             <div className='pagination'>
-                <button disabled={currentPage === 1} onClick={() => handlePageChange(currentPage - 1)}>Previous</button>
+                <button onClick={() => handlePageChange(currentPage - 1)}>Previous</button>
                 <p>{currentPage}</p>
                 <button disabled={currentPage === totalPages} onClick={() => handlePageChange(currentPage + 1)}>Next</button>
             </div>
